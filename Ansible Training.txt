@@ -1,0 +1,22 @@
+rdp.koenig-solutions.com
+172.25.90.90
+user: koenig-cloud\VM118107 -- koenig@101
+RDP System user & passwd: .\administrator -- VMware1!
+
+Inside vmware browser type: https://172.25.100.100/
+
+vmware vcentre login creds - koenig-cloud\VM118101 -- koenig@101
+
+Once logged into the vmware console, there are 5 linux systems having 2 users. the creds are below:
+1> root -- redhat
+2> student -- student
+
+
+Once logged into the console, open terminal and type:
+
+rht-vmctl start all
+rht-vmctl status all
+
+
+To check the connection type plugins list --> ansible-doc -t connection -l
+To check the inventory type supported by ansible --> ansible-doc -t inventory -l

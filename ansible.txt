@@ -1,0 +1,25 @@
+$ cat inventory
+servera
+
+[web]
+serverb
+serverc
+
+[db]
+serverc
+serverd
+
+[datacentre:children]
+web
+db
+
+
+$ ansible --list-hosts -i inventory all
+$ ansible --list-hosts -i inventory web
+
+
+To change the default config file location for ansible you need to define a variable in the user's .profile file with the value "export ANSIBLE_CONF=<PATH>"
+
+
+Format of ansible.cfg file is given below:
+
